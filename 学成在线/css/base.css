@@ -1,0 +1,23 @@
+/* 消除盒子默认格式，设置内减模式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 消除无序列表默认圆点 */
+li {
+    list-style: none;
+}
+
+/* 设置字号和行高，设置字体和颜色 */
+body {
+    font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+
+/* 设置超链接字体颜色，消除超链接默认下划线格式 */
+a {
+    color: #333;
+    text-decoration: none;
+}

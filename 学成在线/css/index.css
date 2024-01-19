@@ -1,0 +1,110 @@
+body {
+    background-color: #f3f5f7;
+}
+/* 版心格式 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+/* 头部 */
+.header {
+    height: 100px;
+    background-color: white;
+}
+.header .wrapper {
+    display: flex;
+    padding-top: 29px;
+}
+/* 头部->logo */
+.logo a {
+    display: block;/* 行内→块，宽高生效 */
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    font-size: 0;/* 将文字字号调为0，隐藏文字 */
+}
+/* 头部->导航 */
+.nav{
+    margin-left: 102px;
+}
+.nav ul{
+    display: flex;
+}
+.nav li{
+    margin-right: 24px;
+}
+.nav li a{
+    display: block;/* 行内->块，上下padding生效 */
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+/* .active：表示默认选中的标签；:hover：表示鼠标悬停效果 */
+.nav li .active,
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+/* 头部->搜索 */
+.search{
+    display: flex;/* 拉伸侧轴使input占满盒子 */
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 14px;
+}
+.search input{
+    flex: 1;/* 输入框占满盒子剩下的全部 */
+    border: 0;/* 消除边框线 */
+    background-color: transparent;/* 颜色改为透明（可以透底色） */
+    outline: none;/* 去掉焦点框（点击输入框不会有边框线） */
+}
+/* ::placeholder选择器，修改placeholder属性 */
+.search input::placeholder{
+    font-size: 14px;
+    color: #999;
+}
+.search a{
+    /* display: block; 父级是flex布局，子级变弹性盒子，宽高生效*/
+    align-self: center;/* 侧轴居中 */
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+}
+/* 头部->用户 */
+.user{
+    margin-left: 32px;
+    margin-top: 4px;
+}
+.user img{
+    vertical-align: middle;/* 相对于父元素垂直居中 */
+    margin-right: 7px;
+}
+.user span{
+    vertical-align: middle;
+    font-size: 16px;
+    color: #666;
+}
+/* banner区域 */
+.banner{
+    height: 420px;
+    background-color: #0092cb;
+}
+.banner .wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+/* banner->左侧导航 */
+.banner .wrapper .left{
+    width: 192px;
+    height: 420px;
+    background-color: rgba(0,0,0,0.42);
+}
+.banner .wrapper .right{
+    background-color: gold;
+    flex: 1;
+}
