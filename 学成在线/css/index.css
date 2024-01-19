@@ -168,3 +168,89 @@ body {
     border-radius: 15px;
     color: #fff;
 }
+/* recommend */
+.recommend{
+    display: flex;
+    height: 60px;
+    margin-top: 11px;
+    padding: 0 20px;
+    line-height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(211, 211, 211, 0.5);/* 盒子阴影 */
+}
+.recommend h3{
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+.recommend ul{
+    display: flex;
+    flex: 1;
+}
+.recommend ul li a{
+    padding: 0 24px;
+    border-right:1px solid #e0e0e0;
+}
+.recommend ul li:last-child a{
+    border-right: 0;
+    font-size: 18px;
+}
+.recommend .motify{
+    font-size: 16px;
+    color: #00a4ff;
+}
+/* course */
+.course{
+    margin-top: 15px;
+}
+/* 设置通用样式，方便接下来的版块共用 */
+.hd{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+.hd h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+.hd a{
+    width: 76px;
+    color: #999;
+    background: url(../images/more.png) no-repeat right center;
+}
+.bd ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bd li{
+    width: 228px;
+    height: 271px;
+    margin-bottom: 14px;
+    background-color: pink;
+}
+.bd li .pic{
+    height: 156px;
+}
+.bd li .text{
+    height: 115px;
+    padding: 20px;
+    background-color: #fff;
+}
+.bd li .text h4{
+    height: 40px;
+    margin-bottom: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.bd li .text p{
+    color: #999;
+    line-height: 20px;
+}
+.bd li .text p span{
+    color: #fa6400;
+}
+.bd li .text p i{
+    font-style: normal;
+}
