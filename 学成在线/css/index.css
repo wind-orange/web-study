@@ -103,8 +103,68 @@ body {
     width: 192px;
     height: 420px;
     background-color: rgba(0,0,0,0.42);
+    padding: 3px 20px;
 }
+.banner .wrapper .left a{
+    display: block;/* 转块可以使宽度占满父级的100% */
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+    background: url(../images/right.png) no-repeat right center;/* 背景图不平铺，右侧，居中 */
+}
+.banner .wrapper .left a:hover{
+    background-image: url(../images/right-hover.png);
+    color: #00a4ff;
+}
+/* banner->右侧课程表 */
 .banner .wrapper .right{
-    background-color: gold;
-    flex: 1;
+    width: 218px;
+    height: 305px;
+    margin-top: 60px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+.banner .wrapper .right h3{
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+}
+.banner .wrapper .right .content{
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 14px;
+}
+.banner .wrapper .right .content dl{
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.banner .wrapper .right .content dt{
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.banner .wrapper .right .content dd{
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.banner .wrapper .right .content dd span:nth-child(1){
+    color: #00a4ff;
+}
+.banner .wrapper .right .content dd span:nth-child(2){
+    color: #7d7d7d;
+}
+.banner .wrapper .right a{
+    display: block;
+    height: 32px;
+    line-height: 32px;/* 文字垂直居中 */
+    text-align: center;/* 文字水平居中 */
+    background-color: #00a4ff;
+    border-radius: 15px;
+    color: #fff;
 }
