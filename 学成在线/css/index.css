@@ -204,6 +204,7 @@ body {
     margin-top: 15px;
 }
 /* 设置通用样式，方便接下来的版块共用 */
+/* 标题 */
 .hd{
     display: flex;
     justify-content: space-between;
@@ -219,6 +220,7 @@ body {
     color: #999;
     background: url(../images/more.png) no-repeat right center;
 }
+/* 内容 */
 .bd ul{
     display: flex;
     flex-wrap: wrap;
@@ -279,4 +281,8 @@ body {
 .bd .right .top{
     height: 100px;
     margin-bottom: 15px;
+}
+/* 为什么不加width会出现space-between没用的情况？ */
+.bd2 ul{
+    width: 1200px;
 }
