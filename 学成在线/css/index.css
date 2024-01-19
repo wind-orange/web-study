@@ -215,7 +215,7 @@ body {
     font-size: 24px;
     font-weight: 400;
 }
-.hd a{
+.hd .more{
     width: 76px;
     color: #999;
     background: url(../images/more.png) no-repeat right center;
