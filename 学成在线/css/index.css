@@ -254,3 +254,29 @@ body {
 .bd li .text p i{
     font-style: normal;
 }
+/* 前端 */
+.hd ul{
+    display: flex;
+}
+.hd ul li{
+    margin-right: 60px;
+    font-size: 16px;
+}
+.hd ul li a .active,
+.hd ul li a:hover{
+    color: #00a4ff;
+}
+.bd{
+    display: flex;
+    justify-content: space-between;
+}
+.bd .left{
+    width: 228px;
+}
+.bd .right{
+    width: 957px;
+}
+.bd .right .top{
+    height: 100px;
+    margin-bottom: 15px;
+}
