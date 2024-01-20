@@ -1,0 +1,122 @@
+/* 主要是头部和尾部的各个页面相同的板式 */
+/* 设置版心 */
+.wrapper{
+    margin: 0 auto;
+    width: 1240px;
+}
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper ul{
+    display: flex;
+    justify-content: end;
+    height: 52px;
+}
+.shortcut .wrapper ul li a{
+    height: 20px;
+    line-height: 52px;
+    padding: 0 15px;
+    border-right: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+}
+.shortcut .wrapper ul li:last-child a{
+    border-right: 0;
+    padding-right: 0;
+}
+.shortcut .wrapper ul li .active,
+.shortcut .wrapper ul li a:hover{
+    color: #5EB69C;
+}
+.shortcut .wrapper ul li span{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+/* header头部 */
+.header{
+    height: 132px;
+}
+.header .wrapper{
+    display: flex;
+}
+/* logo */
+.header .logo{
+    height: 88px;
+    width: 200px;
+    margin: 22px 40px 22px 0;
+    background-image: url(../images/logo.png);
+}
+.header .logo h1{
+    font-size: 0;
+}
+/* 导航栏 */
+.header .head-nav{
+    margin-top: 55px;
+}
+.header .head-nav ul{
+    display: flex;
+}
+.header .head-nav ul a{
+    padding-bottom: 10px;
+    margin-right: 48px;
+}
+.header .head-nav ul li:last-child a{
+    margin-right: 75px;
+}
+.header .head-nav ul .active,
+.header .head-nav ul a:hover{
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+/* 搜索框 */
+.header .search{
+    display: flex;
+    height: 42px;
+    width: 170px;
+    margin-top: 45px;
+    border-bottom: 2px solid #ccc;
+}
+.header .search span{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;/* 原来设置了flex布局也生效啊 */
+    align-self: center;
+    color: #ccc;
+}
+.header .search input{
+    background-color: transparent;
+}
+.header .search input::placeholder{
+    color: #ccc;
+}
+/* 购物车 */
+/* span和i是同级，所以在span上设置position不行 */
+.header .shopping-car{
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-top: 54px;
+    margin-left: 45px;
+}
+.header .shopping-car .iconfont{
+    font-size: 24px;
+}
+.header .shopping-car i{
+    position: absolute;
+    top: 1px;
+    /* right 定位右对齐：如果文字多了，向左撑开，可能盖住其他的内容 */
+    /* right: 1px; */
+    /* left 定位左对齐：文字多了，向右撑开 */
+    left: 15px;
+    padding: 0 6px;
+    height: 15px;
+    background-color: #E26237;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFEFE;
+    line-height: 15px;
+}
