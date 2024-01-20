@@ -4,6 +4,7 @@
     margin: 0 auto;
     width: 1240px;
 }
+/* 头部导航 */
 .shortcut{
     height: 52px;
     background-color: #333;
@@ -119,4 +120,25 @@
     font-size: 14px;
     color: #FFFEFE;
     line-height: 15px;
+}
+/* 尾部 */
+.footer{
+    height: 582px;
+    margin-top: 40px;
+    background-color: #F5F5F5;
+}
+.footer .service{
+    background-color: gold;
+}
+.footer .help{
+    background-color: salmon;
+}
+.footer .help .left{
+    background-color: violet;
+}
+.footer .help .right{
+    background-color: olive;
+}
+.footer .copyright{
+    background-color: #E26237;
 }
