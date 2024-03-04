@@ -128,17 +128,86 @@
     background-color: #F5F5F5;
 }
 .footer .service{
-    background-color: gold;
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #e8e8e8;
 }
+.footer .service ul{
+    display: flex;
+    justify-content: space-evenly;/* 主轴对齐：盒子与容器间距相等 */
+}
+.footer .service ul li{
+    display: flex;
+    height: 58px;
+    width: 190px;
+}
+.footer .service ul li h5{
+    margin-right: 20px;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprite.png);
+}
+.footer .service ul li p{
+    font-size: 28px;
+    line-height: 58px;
+}
+.footer .service ul li:nth-child(2) h5{
+    background-position: 0 -58px;
+}
+.footer .service ul li:nth-child(3) h5 {
+    background-position: 0 -116px;
+}
+.footer .service ul li:nth-child(4) h5 {
+    background-position: 0 -174px;
+}
+
 .footer .help{
-    background-color: salmon;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
 }
+
 .footer .help .left{
-    background-color: violet;
+    display: flex;
+    padding-top: 60px;
 }
+.footer .help .left dl{
+    margin-right: 84px;
+}
+.footer .help .left dt{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.footer .help .left dd{
+    margin-bottom: 10px;
+    color: #969696;
+}
+
 .footer .help .right{
-    background-color: olive;
+    padding-top: 60px;
+    width: 295px;
 }
+.footer .help .right ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .help .right ul .pic{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+}
+.footer .help .right ul p{
+    color: #969696;
+    text-align: center;
+}
+
 .footer .copyright{
-    background-color: #E26237;
+    text-align: center;
+}
+.footer .copyright p{
+    margin-bottom: 10px;
+    color: #a1a1a1;
+}
+.footer .copyright p a{
+    color: #a1a1a1;
 }
