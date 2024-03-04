@@ -1,0 +1,51 @@
+/* banner区域 */
+/* 图片 */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-color: forestgreen;
+}
+.banner .pic{
+    display: flex;
+}
+.banner img{
+    width: 1240px;
+}
+/* 侧导航 */
+.banner .subnav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+.banner .subnav li{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 12px 0 30px;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+.banner .subnav li a{
+    margin-right: 5px;
+    font-size: 14px;
+    color: #f5f5f5;
+}
+.banner .subnav li a:nth-child(1){
+    margin-right: 14px;
+    font-size: 16px;
+}
+.banner .subnav li .iconfont{
+    font-size: 14px;
+}
+.banner .subnav li:hover{
+    background-color: #00BE9A;
+}
