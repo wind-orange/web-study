@@ -2,16 +2,16 @@
   <!-- <person/> -->
   <!-- <game/> -->
   <!-- <Name/> -->
-  <demo01/>
-  <demo02/>
-  <demo03/>
-  <demo04/>
+  <!-- <demo01/> -->
+  <!-- <demo02/> -->
+  <!-- <demo03/> -->
+  <!-- <demo04/> -->
 </template>
 
 <script>
-  import Person from './components/Person.vue'
-  import Game from './components/Game.vue'
-  import Name from './components/Name.vue'
+  import Person from './components/base/Person.vue'
+  import Game from './components/base/Game.vue'
+  import Name from './components/base/Name.vue'
   import demo01 from './components/watchdemo/demo01.vue'
   import demo02 from './components/watchdemo/demo02.vue'
   import demo03 from './components/watchdemo/demo03.vue'
