@@ -25,7 +25,7 @@
   const {dogList,getDog} = useDog()
 </script>
 
-<style>
+<style scoped>
   div {
     background-color: seagreen;
   }
