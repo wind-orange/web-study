@@ -27,6 +27,9 @@ const router = createRouter({
           path:'detail',
           // path:'detail/:id/:title/:content', parmas传参写法
           component:Detail,
+          props(route){ //props配置
+            return route.query
+          }
         }
       ]
     },
