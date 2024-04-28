@@ -66,8 +66,6 @@
     margin-right: 20px;
     background-color: #f0f0f0;
     padding: 20px;
-    display: flex;
-    flex-direction: column-reverse;
   }
   .nav ul{
     list-style: none;
