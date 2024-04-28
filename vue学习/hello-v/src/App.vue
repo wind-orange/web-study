@@ -6,6 +6,7 @@
   <!-- <demo02/> -->
   <!-- <demo03/> -->
   <!-- <demo04/> -->
+  <Dog/>
 </template>
 
 <script>
@@ -16,9 +17,11 @@
   import demo02 from './components/watchdemo/demo02.vue'
   import demo03 from './components/watchdemo/demo03.vue'
   import demo04 from './components/watchdemo/demo04.vue'
+  import Dog from './components/base/Dog.vue'
   export default{
   components:{Person, Game, Name,
-    demo01, demo02, demo03, demo04}//注册组件
+    demo01, demo02, demo03, demo04,
+    Dog}//注册组件
 }
 </script>
 
