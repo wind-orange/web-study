@@ -28,14 +28,15 @@
 
 
   // 数据
-  let sum =  ref(0)
+  // let sum =  ref(0)
   let n = ref(1)
   //方法
   function add(){
-    sum.value += n.value
+    countStore.sum += n.value
   }
   function sub(){
-    sum.value -= n.value
+    // countStore.sum -= n.value
+    countStore.minus(n.value)
   }
 </script>
 
