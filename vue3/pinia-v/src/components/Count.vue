@@ -1,6 +1,7 @@
 <template>
   <div class="count">
-    <h3>当前求和为：{{ countStore.sum }}</h3>
+    <h3>当前求和为：{{ sum }},放大十倍后结果为{{ bigSum }}</h3>
+    <h3>学校地址为{{ school }},转为大写为{{ upperSchool }}</h3>
     <!-- v-model默认定义为字符串，所以需要转换成数字 -->
     <select v-model.number="n">
       <option value="1">1</option>
@@ -22,10 +23,11 @@
   import { ref } from 'vue';
   // 引入pinia组件
   import {useCountStore} from '@/store/count'
+  import { storeToRefs } from 'pinia';
 
   const countStore = useCountStore()
   // console.log(countStore)// 是一个proxy对象，包含各种数据
-
+  const {sum,school,bigSum,upperSchool} = storeToRefs(countStore)
 
   // 数据
   // let sum =  ref(0)
