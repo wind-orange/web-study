@@ -2,6 +2,25 @@
   <div class="father">
     <h3>父组件</h3>
     <div class="content">
+      <Game>
+        <template v-slot="pamas">
+          <ul>
+            <li v-for="g in pamas.games" :key="g.id">{{ g.name }}</li>
+          </ul>
+        </template>
+      </Game>
+      <Game>
+        <template v-slot="pamas">
+          <ol>
+            <li v-for="g in pamas.games" :key="g.id">{{ g.name }}</li>
+          </ol>
+        </template>
+      </Game>
+      <Game>
+        <template v-slot="pamas">
+          <h3 v-for="g in pamas.games" :key="g.id">{{ g.name }}</h3>
+        </template>
+      </Game>
       
     </div>
   </div>
