@@ -1,6 +1,7 @@
 <template>
   <div class="category">
     <h2>{{title}}</h2>
+    <!-- 占位 -->
     <slot>默认内容</slot>
   </div>
 </template>

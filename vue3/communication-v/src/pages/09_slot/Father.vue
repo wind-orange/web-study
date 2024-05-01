@@ -2,18 +2,7 @@
   <div class="father">
     <h3>父组件</h3>
     <div class="content">
-      <Game>
-
-      </Game>
-
-      <Game>
-
-      </Game>
-
-      <Game>
-
-      </Game>
-
+      
     </div>
   </div>
 </template>
