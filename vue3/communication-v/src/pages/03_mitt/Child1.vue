@@ -1,10 +1,16 @@
 <template>
   <div class="child1">
     <h3>子组件1</h3>
+		<h4>游戏:{{ game }}</h4>
+		<!-- 调用emitter事件传递数据 -->
+		<button @click="emitter.emit('send-game',game)">把游戏给哥哥</button>
   </div>
 </template>
 
 <script setup lang="ts" name="Child1">
+	import { ref } from 'vue'
+	import emitter from '@/utils/emitter'
+	const game = ref('宝可梦')
 
 </script>
 
